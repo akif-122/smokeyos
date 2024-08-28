@@ -146,6 +146,7 @@ h6 {
     font-weight: 600;
     color: var(--black-color);
     line-height: 1.2;
+    margin-bottom: 3px !important;
 }
 
 .header .header-content .left-side p {
@@ -184,6 +185,23 @@ h6 {
     border-radius: 8px;
 }
 
+@media (max-width:575px){
+    .header {
+        padding: 5px 10px;
+    }
+    
+    
+    .header .header-content .left-side .logo {
+        width: 60px;
+    }
+    .header .header-content .left-side h6 {
+        font-size: 14px;
+    }
+    
+    .header .header-content .left-side p {
+        font-size: 12px;
+    }
+}
 /* 
 ==================================================
     HEADER SECTION END
@@ -267,7 +285,12 @@ h6 {
     margin-bottom: 3px !important;
 
 }
-
+@media (max-width: 575px){
+    
+.tabs ul {
+    width: calc(100% - 50px);
+}
+}
 /* 
 ==================================================
     TABS SECTION END
@@ -765,6 +788,9 @@ h6 {
 
 .side-cart .side-cart-content .side-cart-header {
     padding: 10px 20px;
+}
+.side-cart .side-cart-content .side-cart-header h5{
+    font-size: 18px;
 }
 
 .side-cart .side-cart-content .side-cart-header>div {
