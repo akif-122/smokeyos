@@ -1,10 +1,10 @@
+// HANDLING BODY OVERFLOW
 let body = document.body;
-
 function bodyOverflow(val = "auto"){
     body.style.overflow = val;
 }
 
-
+// HANDLING PRODUCT SIDE ADD TO CART
 let productSideBar = document.getElementById("productSideBar");
 let productSideBarClose = document.getElementById("productSideBarClose");
 let productCards = document.querySelectorAll(".p-card");
