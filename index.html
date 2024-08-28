@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- OWL CAROUSEL CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+
+    <!-- FONTAWESOME ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+    <!-- BOOTSTRAP CSS  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" />
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- PRODUCT SIDEBAR POPUP -->
+    <div class="product-sidebar ">
+        <div class="product-sidebar-content">
+
+            <button class="product-side-close" id="product-sidebar-close"><i class="fa-regular fa-circle-xmark"></i></button>
+            
+            <div class="product-side-detail">
+                <div class="product-side-img">
+                    <img src="assets/imgs/w=1000.avif" width="100%" alt="">
+                </div>
+                <div class="product-sidebar-content">
+                    <div class="d-flex align-items-center justify-content-between gap-3">
+                        <h4 class="m-0">Smokeyo's Chef's Burger</h4>
+                        <h4 class="text-end">Rs. 895</h4>
+                    </div>
+
+                    <p>Juicy grilled beef patty topped with jalapeno, cheese slice, hash brown, spices, green lettuce,
+                        drizzled with chipotle mayo served with fries, coleslaw and saute veggies
+                    </p>
+
+                    <div class="select-items">
+                        <div class="fd-item">
+                            <h5>Make A Meal (optional)</h5>
+                            <label for="item1" class="d-block">
+                                <div class="d-flex align-items-center justify-content-between ">
+                                    <div class="d-flex align-items-center">
+                                        <input type="radio" id="item1" name="item1">
+                                        <p class="m-0">1 Side & 1 Drink (250ml)</p>
+                                    </div>
+
+                                    <p class="extra-price text-end">+ Rs. 300</p>
+
+                                </div>
+                            </label>
+                        </div>
+                        <div class="fd-item">
+                            <h5>Extra Topping (optional)</h5>
+                            <label for="item2" class="d-block">
+                                <div class="d-flex align-items-center justify-content-between ">
+                                    <div class="d-flex align-items-center">
+                                        <input type="checkbox" id="item2">
+                                        <p class="m-0">Topping Of Black Olives</p>
+                                    </div>
+
+                                    <p class="extra-price text-end">+ Rs. 180</p>
+
+                                </div>
+                            </label>
+                            <label for="item3" class="d-block">
+                                <div class="d-flex align-items-center justify-content-between ">
+                                    <div class="d-flex align-items-center">
+                                        <input type="checkbox" id="item3">
+                                        <p class="m-0">Cheese Slice</p>
+                                    </div>
+
+                                    <p class="extra-price text-end">+ Rs. 180</p>
+
+                                </div>
+                            </label>
+                            <label for="item4" class="d-block">
+                                <div class="d-flex align-items-center justify-content-between ">
+                                    <div class="d-flex align-items-center">
+                                        <input type="checkbox" id="item4">
+                                        <p class="m-0">Topping Of Jalapeno's</p>
+                                    </div>
+
+                                    <p class="extra-price text-end">+ Rs. 180</p>
+
+                                </div>
+                            </label>
+                        </div>
+
+
+                        <div class="fd-item">
+                            <h5>Special instructions</h5>
+                            <p>Any specific preferences? Let us know.</p>
+
+                            <div class="form-group">
+                                <textarea name="" id="" class="form-control shadow-none" rows="3" placeholder="Add Special instructions Here"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="side-addtocart-wrap">
+                <div class="row g-0">
+                    <div class="col-6">
+                        <div class="d-flex align-items-center justify-content-center qty-btn">
+                            <button><i class="fa-solid fa-minus"></i></button>
+                            <input type="text" value="1">
+                            <button><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <button class="text-center addto-btn">Add To Cart <i class="fa-solid fa-arrow-right ms-2"></i></button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- PRODUCT SIDEBAR POPUP END -->
+
+
+    <div class="wrapper">
+
+        <!-- HEADER SECTION START -->
+        <header class="header">
+            <div class="header-content">
+
+
+                <div class="left-side">
+                    <a href="#">
+                        <div class="d-flex align-items-center gap-2">
+                            <img class="logo" src="assets/imgs/public.avif" alt="">
+
+                            <div class="">
+                                <h6 class="m-0">Smokeyo’s</h6>
+                                <p class="m-0"><span class="text-green">Open</span> 01:00 pm - 11:59 pm</p>
+                                <!-- <p class="m-0 text-red">Store is closed</p> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="right-section d-none d-lg-block">
+                    <a href="#" class="label"><i class="fa-solid fa-phone "></i> +923434858489</a>
+                    <a href="#" class="label"><i class="fa-brands fa-whatsapp"></i></a>
+                    <button class="cart-toggle">
+                        <span><i class="fa-solid fa-cart-shopping"></i> 2</span>
+                        <span><i class="fa-solid fa-wallet"></i> Rs. 2,200</span>
+                    </button>
+                </div>
+
+
+            </div>
+        </header>
+        <!-- HEADER SECTION END -->
+        <!-- TABS SECTION START -->
+        <section class="tabs shadows">
+            <ul class="tab-slide owl-carousel owl-theme">
+                <li><a href="#" class="active">Afternoon Deal</a></li>
+                <li><a href="#">All Day Deal</a></li>
+                <li><a href="#">Platters</a></li>
+                <li><a href="#">Initiators</a></li>
+                <li><a href="#">Greenads</a></li>
+                <li><a href="#">Amazing Azadi Offer</a></li>
+                <li><a href="#">Flame Grilled</a></li>
+                <li><a href="#">Steaks</a></li>
+                <li><a href="#">Sides</a></li>
+                <li><a href="#">Summer Deal</a></li>
+                <li><a href="#">Burger Dive</a></li>
+            </ul>
+        </section>
+        <!-- TABS SECTION END -->
+
+        <!-- SEARCH BAR SECTION START -->
+        <section class="search-bar">
+            <form action="">
+                <div class="form-group position-relative">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" class="form-control shadow-none" placeholder="Search menu items">
+                    <button class="search-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </form>
+        </section>
+        <!-- SEARCH BAR SECTION END -->
+
+        <!-- PRODUCT COLUMN SECTION START  -->
+        <section class="product-col-section">
+
+            <div class="product-banner">
+                <img src="assets/imgs/banner1.avif" width="100%" alt="">
+            </div>
+
+            <div class="row my-2">
+
+                <div class="col-xl-2 col-md-3 col-sm-4 col-6 px-2">
+                    <div class="p-card">
+                        <div class="p-card-img">
+                            <img src="assets/imgs/w=300.avif" width="100%" alt="">
+                        </div>
+
+                        <div class="p-card-text">
+                            <h6>Azadi Deal 01</h6>
+
+                            <p>Take 1 Quarter chicken & Get 1 portion of Plain fries & 1 chicken & Get 1 portion of
+                                Plain fries & 1 chicken & Get 1 portion of Plain fries & 1</p>
+
+                            <div class="off-label">
+                                <h5 class="mb-0">$42% Off</h5>
+                            </div>
+
+                            <div class="d-flex align-items-end justify-content-between p-card-footer">
+                                <div class="align-self-end p-card-price">
+                                    <p>Rs. 665</p>
+                                    <small>Rs. 1000 </small>
+                                </div>
+
+                                <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-3 col-sm-4 col-6 px-2">
+                    <div class="p-card">
+                        <div class="p-card-img">
+                            <img src="assets/imgs/w=300.avif" width="100%" alt="">
+                        </div>
+
+                        <div class="p-card-text">
+                            <h6>Azadi Deal 01</h6>
+
+                            <p>Take 1 Quarter chicken & Get 1 portion of Plain fries & 1 chicken & Get 1 portion of
+                                Plain fries & 1 chicken & Get 1 portion of Plain fries & 1</p>
+
+                            <div class="off-label">
+                                <h5 class="mb-0">$42% Off</h5>
+                            </div>
+
+                            <div class="d-flex align-items-end justify-content-between p-card-footer">
+                                <div class="align-self-end p-card-price">
+                                    <p>Rs. 665</p>
+                                    <small>Rs. 1000 </small>
+                                </div>
+
+                                <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-3 col-sm-4 col-6 px-2">
+                    <div class="p-card">
+                        <div class="p-card-img">
+                            <img src="assets/imgs/w=300.avif" width="100%" alt="">
+                        </div>
+
+                        <div class="p-card-text">
+                            <h6>Azadi Deal 01</h6>
+
+                            <p>Take 1 Quarter chicken & Get 1 portion of Plain fries & 1 chicken & Get 1 portion of
+                                Plain fries & 1 chicken & Get 1 portion of Plain fries & 1</p>
+
+                            <div class="off-label">
+                                <h5 class="mb-0">$42% Off</h5>
+                            </div>
+
+                            <div class="d-flex align-items-end justify-content-between p-card-footer">
+                                <div class="align-self-end p-card-price">
+                                    <p>Rs. 665</p>
+                                    <small>Rs. 1000 </small>
+                                </div>
+
+                                <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-3 col-sm-4 col-6 px-2">
+                    <div class="p-card">
+                        <div class="p-card-img">
+                            <img src="assets/imgs/w=300.avif" width="100%" alt="">
+                        </div>
+
+                        <div class="p-card-text">
+                            <h6>Azadi Deal 01</h6>
+
+                            <p>Take 1 Quarter chicken & Get 1 portion of Plain fries & 1 chicken & Get 1 portion of
+                                Plain fries & 1 chicken & Get 1 portion of Plain fries & 1</p>
+
+                            <div class="off-label">
+                                <h5 class="mb-0">$42% Off</h5>
+                            </div>
+
+                            <div class="d-flex align-items-end justify-content-between p-card-footer">
+                                <div class="align-self-end p-card-price">
+                                    <p>Rs. 665</p>
+                                    <small>Rs. 1000 </small>
+                                </div>
+
+                                <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-xl-2 col-md-3 col-sm-4 col-6 px-2">
+                    <div class="p-card">
+                        <div class="p-card-img">
+                            <img src="assets/imgs/w=300.avif" width="100%" alt="">
+                        </div>
+
+                        <div class="p-card-text">
+                            <h6>Azadi Deal 01</h6>
+
+                            <p>Take 1 Quarter chicken & Get 1 portion of Plain fries & 1 chicken & Get 1 portion of
+                                Plain fries & 1 chicken & Get 1 portion of Plain fries & 1</p>
+
+                            <div class="off-label">
+                                <h5 class="mb-0">$42% Off</h5>
+                            </div>
+
+                            <div class="d-flex align-items-end justify-content-between p-card-footer">
+                                <div class="align-self-end p-card-price">
+                                    <p>Rs. 665</p>
+                                    <small>Rs. 1000 </small>
+                                </div>
+
+                                <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PRODUCT COLUMN SECTION END  -->
+
+
+        <!-- PRODUCT ROW SECTION START  -->
+        <section class="product-col-section product-row-section">
+
+            <div class="product-banner">
+                <img src="assets/imgs/public (1).avif" width="100%" alt="">
+            </div>
+
+            <div class="row my-2">
+
+                <div class="col-xl-4 col-md-6  px-2">
+                    <div class="p-card p-row-card d-flex">
+                        <div class="p-card-img">
+                            <img src="assets/imgs/w=300.avif" width="100%" alt="">
+                        </div>
+
+                        <div class="p-card-text">
+                            <h6>Summer Deal 1</h6>
+
+                            <p>Take 1 quarter chicken & get 1 lemon lush mocktail free.</p>
+
+                            <div class="off-label">
+                                <h5 class="mb-0">$42% Off</h5>
+                            </div>
+
+                            <div class="d-flex align-items-end justify-content-between p-card-footer">
+                                <div class="align-self-end p-card-price">
+                                    <p>Rs. 665</p>
+                                    <small>Rs. 1000 </small>
+                                </div>
+
+                                <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6  px-2">
+                    <div class="p-card p-row-card d-flex">
+                        <div class="p-card-img">
+                            <img src="assets/imgs/w=300.avif" width="100%" alt="">
+                        </div>
+
+                        <div class="p-card-text">
+                            <h6>Summer Deal 1</h6>
+
+                            <p>Take 1 quarter chicken & get 1 lemon lush mocktail free.</p>
+
+                            <div class="off-label">
+                                <h5 class="mb-0">$42% Off</h5>
+                            </div>
+
+                            <div class="d-flex align-items-end justify-content-between p-card-footer">
+                                <div class="align-self-end p-card-price">
+                                    <p>Rs. 665</p>
+                                    <small>Rs. 1000 </small>
+                                </div>
+
+                                <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6  px-2">
+                    <div class="p-card p-row-card d-flex">
+                        <div class="p-card-img">
+                            <img src="assets/imgs/w=300.avif" width="100%" alt="">
+                        </div>
+
+                        <div class="p-card-text">
+                            <h6>Summer Deal 1</h6>
+
+                            <p>Take 1 quarter chicken & get 1 lemon lush mocktail free.</p>
+
+                            <div class="off-label">
+                                <h5 class="mb-0">$42% Off</h5>
+                            </div>
+
+                            <div class="d-flex align-items-end justify-content-between p-card-footer">
+                                <div class="align-self-end p-card-price">
+                                    <p>Rs. 665</p>
+                                    <small>Rs. 1000 </small>
+                                </div>
+
+                                <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PRODUCT ROW SECTION END  -->
+
+
+        <!-- PRODUCT COLUMN SECTION START  -->
+        <section class="product-col-section">
+
+            <div class="product-banner">
+                <img src="assets/imgs/public (2).avif" width="100%" alt="">
+            </div>
+
+            <div class="row my-2">
+
+                <div class="col-xl-2 col-md-3 col-sm-4 col-6 px-2">
+                    <div class="p-card">
+                        <div class="p-card-img">
+                            <img src="assets/imgs/w=300 (1).avif" width="100%" alt="">
+                        </div>
+
+                        <div class="p-card-text">
+                            <h6>Quarter Chicken</h6>
+
+                            <p>Steamed juicy grilled chicken with less grease with</p>
+
+                            <div class="off-label">
+                                <!-- <h5 class="mb-0">$42% Off</h5> -->
+                            </div>
+
+                            <div class="d-flex align-items-end justify-content-between p-card-footer">
+                                <div class="align-self-end p-card-price">
+                                    <p>Rs. 595</p>
+                                    <!-- <small>Rs. 1000 </small> -->
+                                </div>
+
+                                <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-3 col-sm-4 col-6 px-2">
+                    <div class="p-card">
+                        <div class="p-card-img">
+                            <img src="assets/imgs/w=300 (1).avif" width="100%" alt="">
+                        </div>
+
+                        <div class="p-card-text">
+                            <h6>Quarter Chicken</h6>
+
+                            <p>Steamed juicy grilled chicken with less grease with</p>
+
+                            <div class="off-label">
+                                <!-- <h5 class="mb-0">$42% Off</h5> -->
+                            </div>
+
+                            <div class="d-flex align-items-end justify-content-between p-card-footer">
+                                <div class="align-self-end p-card-price">
+                                    <p>Rs. 595</p>
+                                    <!-- <small>Rs. 1000 </small> -->
+                                </div>
+
+                                <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-3 col-sm-4 col-6 px-2">
+                    <div class="p-card">
+                        <div class="p-card-img">
+                            <img src="assets/imgs/w=300 (1).avif" width="100%" alt="">
+                        </div>
+
+                        <div class="p-card-text">
+                            <h6>Quarter Chicken</h6>
+
+                            <p>Steamed juicy grilled chicken with less grease with</p>
+
+                            <div class="off-label">
+                                <!-- <h5 class="mb-0">$42% Off</h5> -->
+                            </div>
+
+                            <div class="d-flex align-items-end justify-content-between p-card-footer">
+                                <div class="align-self-end p-card-price">
+                                    <p>Rs. 595</p>
+                                    <!-- <small>Rs. 1000 </small> -->
+                                </div>
+
+                                <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-3 col-sm-4 col-6 px-2">
+                    <div class="p-card">
+                        <div class="p-card-img">
+                            <img src="assets/imgs/w=300 (1).avif" width="100%" alt="">
+                        </div>
+
+                        <div class="p-card-text">
+                            <h6>Quarter Chicken</h6>
+
+                            <p>Steamed juicy grilled chicken with less grease with</p>
+
+                            <div class="off-label">
+                                <!-- <h5 class="mb-0">$42% Off</h5> -->
+                            </div>
+
+                            <div class="d-flex align-items-end justify-content-between p-card-footer">
+                                <div class="align-self-end p-card-price">
+                                    <p>Rs. 595</p>
+                                    <!-- <small>Rs. 1000 </small> -->
+                                </div>
+
+                                <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCT COLUMN SECTION END  -->
+
+        <!-- FOOTER SECTION START -->
+        <section class="footer">
+            <div class="ft-content">
+                <div class="row text-center text-lg-start">
+                    <div class="col-lg-8">
+                        <h4>Smokeyo’s</h4>
+
+                        <ul
+                            class="d-flex align-items-center justify-content-center justify-content-lg-start gap-4 flex-wrap mb-4">
+                            <li><a href="#">Delivery Hours</a></li>
+                            <li><a href="#">Delivery Locations</a></li>
+                            <li><a href="#">Store Timings</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">My Profile</a></li>
+                        </ul>
+
+                        <div class="row">
+                            <div class="col-xl-4 col-md-5 mb-4">
+                                <h5>Contact Us</h5>
+                                <div class="d-flex justify-content-center justify-content-lg-start">
+                                    <a href="#" class="label"><i class="fa-brands fa-whatsapp"></i> Chat</a>
+                                    <a href="#" class="label"><i class="fa-solid fa-phone"></i> 03834889398</a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-7 mb-4">
+                                <h5>Store Location</h5>
+                                <p>Showroom no. 2, Ocean point, near Hill park round about, Shaheed-e-Millat Road
+                                    Karachi </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 payment mb-4">
+                        <p>Accepted Payments</p>
+                        <div class="d-flex justify-content-center justify-content-lg-start g-3">
+                            <img src="assets/imgs/download (1).png" alt="">
+                            <img src="assets/imgs/download.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ft-bottom border-top py-3">
+                    <p class="m-0 text-center">2024 – Smokeyo’s. All Rights Reserved.</p>
+                </div>
+
+
+            </div>
+        </section>
+        <!-- FOOTER SECTION END -->
+
+    </div>
+
+
+
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- BOOTSTRAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+
+    <!-- OWL CAROUSEL CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+    <script>
+        $('.tab-slide').owlCarousel({
+            margin: 0,
+            autoWidth: true,
+            dots: false,
+            nav: true,
+        })
+    </script>
+
+
+</body>
+
+</html>
